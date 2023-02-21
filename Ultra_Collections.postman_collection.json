@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "29d742b8-24e1-4d7a-bf3f-d514113e76ad",
+		"name": "Ultra_Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24984623"
+	},
+	"item": [
+		{
+			"name": "Library",
+			"item": [
+				{
+					"name": "Get All Libraries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/library",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"library"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  Library By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/library/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"library",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/library/soft-delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"library",
+								"soft-delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Library",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"National Library of Pakistan\",\"address\": \"Lahore\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/library",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"library"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Library",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"National Library of Pakistan\",\"address\":\"Karachi\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/library/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"library",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  Book By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/book/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"book",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/book/soft-delete/29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"book",
+								"soft-delete",
+								"29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"English\",\"year\":\"1889\",\"authorId\":2}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"librayIds\":[1,2,3]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/book/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"book",
+								"13"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "Get All Authors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/author",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"author"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  Author By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/author/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"author",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/author/soft-delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"author",
+								"soft-delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Author",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"John Eliya\",\"dob\": \"1912\",\"genre\":\"romance\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/author",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"author"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Author",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"John Eliya\",\"dob\": \"1912\",\"genre\":\"romance\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/author/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"author",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
