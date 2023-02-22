@@ -6,18 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:migrate:undo": "sequelize-cli db:migrate:undo",
+    "db:seed": "sequelize-cli db:seed:all",
+    "db:seed:undo": "sequelize-cli db:seed:undo:all"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shujanaqvifalcon/Node-Sequelize-boilerPlate"
+    "url": "https://github.com/shujanaqvifalcon/Ultra-Codes"
   },
   "author": "Shuja Naqvi",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shujanaqvifalcon/Node-Sequelize-boilerPlate/issues"
-  },
-  "homepage": "https://github.com/shujanaqvifalcon/Node-Sequelize-boilerPlate/blob/main/README.md",
+  "homepage": "https://github.com/shujanaqvifalcon/Ultra-Codes/blob/main/README.md",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",

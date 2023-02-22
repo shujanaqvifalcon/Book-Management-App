@@ -9,7 +9,5 @@ Installation steps to run server locally
 4. Run npm install
 5. Create a copy of .env.example and rename it to .env
 6. Run nodemon to start the server
-7. Inorder to connect with db download mysql + sqlWorkBench :)
-
 
 That's it

@@ -23,6 +23,13 @@ exports.validateLibrary = [
   check('address', 'address is required.').notEmpty().trim(),
 ];
 
+exports.validateBook = [
+  check('name', 'Name is required.').notEmpty().trim(),
+  check('year', 'year is required.').notEmpty().trim(),
+  check('authorId', 'authorId is required.').notEmpty().trim(),
+  check('address', 'address is required.').isArray({ min: 1}),
+];
+
 /*
 ======================
 Result
