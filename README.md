@@ -1,5 +1,5 @@
-# Book Managment App
-# Node-Sequelize Back-end
+# Book Management App
+
          Idea
 The books are related to Authors in a way that a single Author could have many
 books but a book can only belong to 1 Author. The books are related to a library in a way that a
@@ -7,11 +7,19 @@ single book may belong to multiple libraries and a library may have multiple boo
 always related to an author but it is possible it does not belong to any library.
        
        
+         Tech-stack
+     1. Node JS.
+     2. Express Js FrameWork.
+     3. MySql DB.
+     4. Sequelize ORM.
+         
+         
+         
          Features
-     1.Crud For an Author.
-     2.Crud For library.
-     3.Crud For Book.
-     4.Junction-table to connect a book with multiple Libraries
+     1. Crud For an Author.
+     2. Crud For library.
+     3. Crud For Book.
+     4. Junction-table to connect a book with multiple Libraries.
      
      
 Installation steps to run server locally
