@@ -1,9 +1,9 @@
 # Book Managment App
 # Node-Sequelize Back-end
-    Features
-  Crud For an Author.
-  Crud For library.
-  Crud For Book.
+        Features
+      Crud For an Author.
+      Crud For library.
+      Crud For Book.
       Goal
 The books are related to Authors in a way that a single Author could have many
 books but a book can only belong to 1 Author. The books are related to a library in a way that a
