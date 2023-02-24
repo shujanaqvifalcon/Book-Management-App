@@ -29,4 +29,11 @@ Installation steps to run server locally
 4. Run npm install
 5. Create a copy of .env.example and rename it to .env
 6. Run nodemon to start the server
-That's it
+
+
+
+             CMDS
+     1. npm install (To install the packages).
+     2. npm run db:migrate (To Migrate All Tables).
+     3. npm run db:seed (To run all seeders).
+     4. npm run dev (To run server).
