@@ -8,10 +8,10 @@ always related to an author but it is possible it does not belong to any library
        
        
          Features
-     1)Crud For an Author.
-     2)Crud For library.
-     3)Crud For Book.
-     4)Junction-table to connect a book with multiple Libraries
+     1.Crud For an Author.
+     2.Crud For library.
+     3.Crud For Book.
+     4.Junction-table to connect a book with multiple Libraries
      
      
 Installation steps to run server locally
